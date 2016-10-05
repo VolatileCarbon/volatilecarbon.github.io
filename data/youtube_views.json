@@ -1,0 +1,10 @@
+{
+    "labels": ["Sep 2016"],
+    "datasets": [{
+        "label": "Monthly Views",
+        "data": [92],
+        "backgroundColor": "rgba(204,24,30,0.2)",
+        "borderColor": "rgba(204,24,30,1)",
+        "borderWidth": 1
+    }]
+}

@@ -1,0 +1,17 @@
+{
+    "labels": ["Sep 2016"],
+    "datasets": [{
+        "label": "Twitch Follows",
+        "data": [7],
+        "backgroundColor": "rgba(125,91,190,0.2)",
+        "borderColor": "rgba(125,91,190,1)",
+        "borderWidth": 1
+    },
+    {
+        "label": "Picarto Follows",
+        "data": [0],
+        "backgroundColor": "rgba(36,39,43, 0.2)",
+        "borderColor": "rgba(36,39,43,1)",
+        "borderWidth": 1
+    }]
+}

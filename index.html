@@ -1,0 +1,116 @@
+<html>
+<head>
+  <style>
+    .chart {
+      margin: 2%;
+      width: 46%;
+    }
+  </style>
+  <title>Volatile Carbon Metrics</title>
+</head>
+<body>
+  <h1>Volatile Carbon Metrics</h1>
+  <a href="#youtube">YouTube</a> - <a href="#streaming">Streaming</a> - <a href="#revenue">Revenue</a> - <a href="#social">Social</a>
+  <h3 id="#youtube">YouTube</h3>
+  <div class = "chart">
+    <canvas id="youtubeViews"></canvas>
+  </div>
+  <div class = "chart">
+    <canvas id="youtubeSubscriptions"></canvas>
+  </div>
+  <h3 id="streaming">Streaming</h3>
+  <div class = "chart">
+    <canvas id="streamingFollows"></canvas>
+  </div>
+  <div class = "chart">
+    <canvas id="timeBroadcast"></canvas>
+  </div>
+  <h3 id="revenue">Revenue</h3>
+  <div class = "chart">
+    <canvas id="donations"></canvas>
+  </div>
+  <div class = "chart">
+    <canvas id="patreonRevenue"></canvas>
+  </div>
+  <h3 id="social">Social</h3>
+  <div class = "chart">
+    <canvas id="socialFollows"></canvas>
+  </div>
+  <script src="/node_modules/chart.js/dist/Chart.js"></script>
+  <script src="/node_modules/jquery/dist/jquery.js"></script>
+  <script>
+    var options = {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+
+    var youtubeViewsCtx = document.getElementById("youtubeViews").getContext("2d");
+    $.getJSON( "/data/youtube_views.json", function( data ) {
+      var youtubeViews = new Chart(youtubeViewsCtx, {
+        type: 'line',
+        data: data,
+        options: options
+      })
+    })
+
+    var youtubeSubscriptionsCtx = document.getElementById("youtubeSubscriptions").getContext("2d");
+    $.getJSON( "/data/youtube_subscriptions.json", function( data ) {
+      var youtubeSubscriptions = new Chart(youtubeSubscriptionsCtx, {
+        type: 'line',
+        data: data,
+        options: options
+      })
+    })
+
+    var streamingFollowsCtx = document.getElementById("streamingFollows").getContext("2d");
+    $.getJSON( "/data/streaming_follows.json", function( data ) {
+      var streamingFollows = new Chart(streamingFollowsCtx, {
+        type: 'line',
+        data: data,
+        options: options
+      })
+    })
+
+    var donationsCtx = document.getElementById("donations").getContext("2d");
+    $.getJSON( "/data/donations.json", function( data ) {
+      var donations = new Chart(donationsCtx, {
+        type: 'line',
+        data: data,
+        options: options
+      })
+    })
+
+    var timeBroadcastCtx = document.getElementById("timeBroadcast").getContext("2d");
+    $.getJSON( "/data/time_broadcast.json", function( data ) {
+      var timeBroadcast = new Chart(timeBroadcastCtx, {
+        type: 'line',
+        data: data,
+        options: options
+      })
+    })
+
+    var patreonRevenueCtx = document.getElementById("patreonRevenue").getContext("2d");
+    $.getJSON( "/data/patreon_revenue.json", function( data ) {
+      var patreonRevenue = new Chart(patreonRevenueCtx, {
+        type: 'line',
+        data: data,
+        options: options
+      })
+    })
+
+    var socialFollowsCtx = document.getElementById("socialFollows").getContext("2d");
+    $.getJSON( "/data/social_follows.json", function( data ) {
+      var youtubeSubscriptions = new Chart(socialFollowsCtx, {
+        type: 'line',
+        data: data,
+        options: options
+      })
+    })
+  </script>
+</body>
+</html>
