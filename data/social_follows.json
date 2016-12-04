@@ -1,15 +1,15 @@
 {
-    "labels": ["Sep 2016", "Oct 2016"],
+    "labels": ["Sep 2016", "Oct 2016", "Nov 2016"],
     "datasets": [{
         "label": "Tumblr Follows",
-        "data": [1, 1],
+        "data": [1, 1, 1],
         "backgroundColor": "rgba(54,70,93,0.2)",
         "borderColor": "rgba(54,70,93,1)",
         "borderWidth": 1
     },
     {
         "label": "Twitter Follows",
-        "data": [0, 2],
+        "data": [0, 2, 3],
         "backgroundColor": "rgba(29,161,242, 0.2)",
         "borderColor": "rgba(29,161,242,1)",
         "borderWidth": 1
