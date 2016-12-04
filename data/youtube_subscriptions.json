@@ -2,7 +2,7 @@
     "labels": ["Sep 2016", "Oct 2016", "Nov 2016"],
     "datasets": [{
         "label": "Monthly Subscriptions",
-        "data": [4, 4, 0],
+        "data": [4, 4, -1],
         "backgroundColor": "rgba(204,24,30,0.2)",
         "borderColor": "rgba(204,24,30,1)",
         "borderWidth": 1
