@@ -1,0 +1,2 @@
+exclude: [data, css, img, libs]
+keep: [data,css, img, libs]
