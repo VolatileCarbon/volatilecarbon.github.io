@@ -1,7 +1,6 @@
 .chart {
   margin: 2% 4% 4%;
   width: 92%;
-  max-width: 800px;
 }
 
 body {
@@ -10,6 +9,15 @@ body {
 
 h1, h2, h3, h4, h5, h6, nav {
   font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+  margin-top: 0.75em;
+}
+
+h4 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .subnav {

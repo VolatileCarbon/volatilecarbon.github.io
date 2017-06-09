@@ -1,0 +1,10 @@
+{
+    "labels": ["Mar 2017", "Apr 2017", "May 2017", "Jun 2017"],
+    "datasets": [{
+        "label": "Income",
+        "data": [6, 6, 16.27, 22],
+        "backgroundColor": "rgba(92, 184, 92, 0.2)",
+        "borderColor": "rgba(92,184,92,1)",
+        "borderWidth": 1
+    }]
+}
