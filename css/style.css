@@ -1,5 +1,6 @@
 body {
   font-family: 'Gentium Basic', serif;
+  line-height: 1.4;
 }
 
 h1, h2, h3, h4, h5, h6, nav {
@@ -13,6 +14,14 @@ h3 {
 h4 {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+ul.content-list {
+  font-size: 1.2em;
 }
 
 .subnav {
